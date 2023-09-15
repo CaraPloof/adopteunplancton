@@ -123,25 +123,24 @@ footer p {
     text-align: center;
 }
 
-/* Media Query for Mobile */
 @media screen and (max-width: 768px) {
-    .topTitle {
-        float: none;
-        margin-left: 0;
-    }
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
 
-    .topBtn {
-        float: none;
-        margin-top: 10px;
-        transform: none;
-    }
-
-    #topBtns {
-        padding-right: 0;
-    }
-
-    .shopItem {
-        min-width: 100%;
-        margin-bottom: 20px;
-    }
+@media screen and (max-width: 768px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }

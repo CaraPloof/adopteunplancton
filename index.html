@@ -9,6 +9,9 @@
         <div class="topnav">
             <h1 class="topTitle"> Adopte Un <br />Plancton 🐡 <p class="topSubtitle">La boutique en ligne de <br />planctons à adopter </p>
             </h1>
+			  <a href="javascript:void(0);" class="icon" onclick="responsive()">
+				<i class="fa fa-bars"></i>
+			  </a>
             <div id="topBtns">
                 <a class="topBtn" href="./contacts.html">Nous contacter</a>
                 <a class="topBtn" href="./compte.html">Mon compte</a>
@@ -37,5 +40,15 @@
 		<footer>
 			<p>© 2023 AdopteUnPlancton</p>
 		</footer>
+		<script>
+			function responsive() {
+			  var x = document.getElementById("myTopnav");
+			  if (x.className === "topnav") {
+				x.className += " responsive";
+			  } else {
+				x.className = "topnav";
+			  }
+			}
+		</script>
     </body>
 </html>
