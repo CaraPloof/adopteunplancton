@@ -5,6 +5,7 @@ body {
 	margin: 0;
 	background-color: black;
 	font-family: 'Work Sans', sans-serif;
+	padding-bottom: 50px;
 }
 
 @keyframes fade {
@@ -120,3 +121,47 @@ footer {
 footer p {
 	text-align: center;
 }
+
+/* Styles pour les écrans mobiles */
+@media screen and (max-width: 768px) {
+  .topnav {
+    text-align: center;
+  }
+
+  .topTitle {
+    float: none;
+    margin-left: 0;
+    font-size: 150%; /* Ajustez la taille de la police pour mobile */
+  }
+
+  .topSubtitle {
+    font-size: 100%; /* Ajustez la taille de la police pour mobile */
+  }
+
+  #topBtns {
+    padding-right: 0;
+  }
+
+  .topBtn {
+    display: block; /* Afficher chaque bouton sur une ligne séparée */
+    margin: 10px auto;
+    font-size: 18px; /* Ajustez la taille de la police pour mobile */
+  }
+
+  .shop, .container {
+    font-size: 90%; /* Ajustez la taille de la police pour mobile */
+  }
+
+  .shopItem {
+    max-width: 100%; /* Ajustez la largeur maximale pour mobile */
+    min-height: 150px; /* Ajustez la hauteur minimale pour mobile */
+    padding: 10px; /* Ajustez le rembourrage pour mobile */
+    margin: 10px 0; /* Ajustez la marge pour mobile */
+  }
+
+  img {
+    max-width: 100%; /* Ajustez la largeur des images pour mobile */
+    height: auto; /* Ajustez la hauteur des images pour mobile */
+  }
+}
+
